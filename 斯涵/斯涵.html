@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="斯涵.js" defer></script>
+    <style>
+        body {
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-color: white;
+            border-style: double;
+            font-family: Arial, sans-serif;
+        }
+        .textgreen {
+            color: darkgreen;
+            background-color: white;
+            font-size: 50px;
+        }
+        .backgreen {
+            color: white;
+            background-color: darkgreen;
+            font-size: 30px;
+        }
+        .go {
+            color: darkgray;
+        }
+        .fake {
+            color: white;
+            font-size: 20px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        article {
+            width: 400px;
+            background: darkgreen;
+            padding: 20px;
+            font-size: 18px;
+            max-height: 300px;
+            overflow: hidden;
+            transition: max-height 1s;
+            text-align: justify;
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        article.open {
+            max-height: 1000px;
+        }
+        button {
+            background: darkgray;
+            color: darkgreen;
+            padding: 0.6rem;
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            cursor: pointer;
+            background: white;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <article id="content">
+        <h1 class="textgreen">This is 游斯涵</h1>
+        <hr>
+        
+        <br><br>
+        <b class="backgreen">NAME: 游斯涵</b>
+        <br><br>
+        <b class="backgreen">GENDER: 女</b>
+        <br>
+        <button onclick="showMore()">Show more</button>
+        <br><br>
+        <b class="backgreen">I AM 長褲仔</b>
+        <br>
+        <s class="fake">長褲一年四季都可以穿喔</s>
+        <br><br>
+        <b class="backgreen">I LIKE 吉他、樂高</b>
+        <br><br>
+        <b class="backgreen">I HATE 吵</b>
+        <br><br>
+        <a class="go" href="https://ckefgisc.org/" target="_blank">想知道為什麼有這份自我介紹? 點此了解</a>
+    </article>
+</body>
+</html>

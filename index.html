@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四小</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #0d641c;
+            margin: 0;
+            padding: 20px;
+            background-color: whitesmoke;
+        }
+        .button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #5fca6e;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #44974f;
+        }
+    </style>
+</head>
+<body>
+    <h1>沒事有四小心別錯過</h1>
+    <h2>TEAM 4</h2>
+    <br>
+    <br>
+    <br>
+    <a href="斯涵/斯涵.html" class="button"> 游斯涵 </a>
+    <a href="乙芯/乙芯.html" class="button">乙芯</a>
+    <a href="Ying/Ying.html" class="button">Ying</a>
+    <a href="Bella/Bella.html" class="button"> Bella </a>
+    <a href="Claire1/Claire.html" class="button"> Claire </a>
+    <br>
+    <h6>若點擊後無法顯示，請檢查檔案路徑是否存在</h6>
+    <h6>部分程式參考自chatgpt，讓我們一起謝謝他</h6>
+    <a href="takora/takora.html" class="button"> takora </a>
+    <a href="歐姆蛋/index-歐姆蛋.html" class="button"> 歐姆蛋 </a>
+    <a href="daniel/daniel.html" class="button"> Daniel </a>
+    <a href="momo/一六四小momo   sc.html" class="button"> Momo </a>
+    <a href="年糕/1.html" class="button">年糕</a>
+
+<script>
+        function checkPage(event, url) {
+            event.preventDefault(); 
+            
+            fetch(url, { method: 'HEAD' })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = url; 
+                    } else {
+                        throw new Error('Page not found');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('無法跳轉到指定頁面，將返回首頁，請檢查檔案路徑。');
+                    window.location.href = 'index.html'; 
+                });
+        }
+</script>
+</body>
+</html>
